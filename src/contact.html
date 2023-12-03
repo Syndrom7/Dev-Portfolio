@@ -1,6 +1,40 @@
 {{ define "main" }}
 {{ template "header" . }}
-{{ template "navbar" . }}
+
+    <!-- Navbar -->
+    <nav x-data="{ isOpen: false }" class="container fixed bg-secondary z-[999] mx-auto py-3 px-4 lg:px-52 md:static md:h-auto md:w-auto" :class="{ 'active': isOpen }">
+        <!-- Nav Container -->
+        <div class="flex items-center justify-between flex-wrap">
+            <!-- Logo -->
+            <div class="flex gap-x-3">
+                <img src="images/Logo.svg" alt="logo">
+                <p class="text-white">Syndrom</p>
+            </div>
+            <!-- Mobile nav button -->
+            <button class="relative group md:hidden" @click="isOpen = !isOpen">
+                <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all duration-200">
+                  <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                    <div x-bind:class="isOpen ? 'translate-y-6 delay-100' : 'translate-y-0'" class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left"></div>
+                    <div x-bind:class="isOpen ? 'translate-y-6 delay-75' : 'translate-y-0'" class="bg-white h-[2px] w-7 rounded transform transition-all duration-300" ></div>
+                    <div x-bind:class="isOpen ? 'translate-y-6 delay-100' : 'translate-y-0'" class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left" ></div>
+                    
+                    <!-- Close btn -->
+                    <div x-bind:class="isOpen ? 'w-12 translate-x-0' : ''" class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 flex w-0 ">
+                      <div x-bind:class="isOpen ? 'rotate-45' : ''" class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 "></div>
+                      <div x-bind:class="isOpen ? '-rotate-45' : ''" class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 "></div>
+                    </div>
+                  </div>
+                </div>
+            </button>
+            <!-- Links -->
+            <div :class="{ 'hidden': !isOpen }" class="hidden flex md:block justify-center flex-wrap gap-5 mt-5 text-2xl md:text-lg md:space-x-4" id="nav-links" hx-boost="true">
+                <a href="/" class="text-tertiary w-[100%] hover:text-white"><span class="text-primary">#</span>home</a>
+                <a href="/projects" class="text-tertiary w-[100%] hover:text-white"><span class="text-primary">#</span>works</a>
+                <a href="/aboutme" class="text-tertiary w-[100%] hover:text-white"><span class="text-primary">#</span>about-me</a>
+                <a href="/contact" class="text-white w-[100%]"><span class="text-primary">#</span>contacts</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header section -->
     <section>
