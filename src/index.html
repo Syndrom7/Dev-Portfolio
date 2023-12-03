@@ -1,0 +1,395 @@
+{{ define "main" }}
+{{ template "header" . }}
+{{ template "navbar" . }}
+
+    <!-- Hero section -->
+    <section>
+        <!-- Hero Container -->
+        <div class="container flex flex-col md:flex-row mx-auto justify-between px-4 lg:px-52 md:mt-8">
+            <!-- Hero text -->
+            <div class="flex flex-col gap-6 mt-28 md:mt-28">
+                <!-- Title -->
+                <h3 class="text-white font-semibold text-3xl pb-6">Syndrom is a <span class="text-primary" id="hero-text"></span></h3>
+                <!-- Description -->
+                <p class="text-tertiary">Weaving innovation into functionality, crafting web <br> experiences that unite code and creativity.</p>
+                <!-- Contact button -->
+                <button class="outline outline-2 outline-primary text-white p-3 w-5/12 md:w-5/12 hover:bg-primary-light">Contact Me!!</button>
+            </div>
+            <div>
+                <!-- Hero image -->
+                <img src="images/landing/landing-1.png" alt="hero" class="w-full border-b-2 border-primary">
+                <!-- Current project information -->
+                <div class="flex items-center px-5 text-tertiary py-2 border border-tertiary gap-2">
+                    <span class="w-4 h-4 bg-primary-light outline outline-1 outline-primary"></span>
+                    <!-- Currently working on -->
+                    <p>Currently working on</p>
+                    <!-- Project Link -->
+                    <a href="#" class="text-white underline">🤫</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section>
+        <!-- Projects container -->
+        <div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+            <!-- Projects Header -->
+            <div class="flex flex-row justify-between items-center test">
+                <div class="flex flex-row gap-2 md:gap-6 items-center">
+                    <h2 class="text-white text-3xl"><span class="text-primary">#</span>projects</h2>
+                    <span class="h-0.5 w-[3rem] md:w-[25rem] bg-primary"></span>
+                </div>
+                <a href="/projects" class="text-white underline hover:text-primary" hx-boost="true">View all ~~></a>
+            </div>
+            <!-- Projects list -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+                <!-- Project item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Project image -->
+                    <img src="images/projects/project-CatalystPHP.png" alt="project-img">
+                    <!-- Project stack -->
+                    <ul class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary">
+                        <li>PHP</li>
+                        <li>Tailwind</li>
+                    </ul>
+                    <!-- Project content -->
+                    <div class="text-white p-3">
+                        <!-- Project name -->
+                        <h3 class="text-2xl pb-3">Catalyst PHP</h3>
+                        <!-- Project description -->
+                        <p class="text-tertiary">A type-safe, dependency-free PHP framework</p>
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-5">
+                            <a href="https://github.com/Syndrom7/CatalystPHP" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Github ~~> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Project image -->
+                    <img src="images/projects/project-ibayScrapper.png" alt="project-img">
+                    <!-- Project stack -->
+                    <ul class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary">
+                        <li>Python</li>
+                    </ul>
+                    <!-- Project content -->
+                    <div class="text-white p-3">
+                        <!-- Project name -->
+                        <h3 class="text-2xl pb-3">Ibay Scrapper</h3>
+                        <!-- Project description -->
+                        <p class="text-tertiary">A scraper for ibay.com.mv</p>
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-5">
+                            <a href="https://github.com/Syndrom7/Ibay-Scrapper" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Github ~~> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Project image -->
+                    <img src="images/projects/project-ukulhasVillaBeachHotel.png" alt="project-img">
+                    <!-- Project stack -->
+                    <ul class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary">
+                        <li>Html</li>
+                        <li>Bootstrap</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <!-- Project content -->
+                    <div class="text-white p-3">
+                        <!-- Project name -->
+                        <h3 class="text-2xl pb-3">Ukulhas Villa Beach Hotel</h3>
+                        <!-- Project description -->
+                        <p class="text-tertiary">Guesthouse booking and showcase website</p>
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-5">
+                            <a href="https://ukulhasvillabeachhotel.com" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Live ~~> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Project image -->
+                    <img src="images/projects/project-ukulhasVilla.png" alt="project-img">
+                    <!-- Project stack -->
+                    <ul class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary">
+                        <li>Html</li>
+                        <li>Bootstrap</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <!-- Project content -->
+                    <div class="text-white p-3">
+                        <!-- Project name -->
+                        <h3 class="text-2xl pb-3">Ukulhas Villa</h3>
+                        <!-- Project description -->
+                        <p class="text-tertiary">Guesthouse booking and showcase website</p>
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-5">
+                            <a href="https://ukulhasvilla.com" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Live ~~> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Project image -->
+                    <img src="images/projects/project-thaabithHajj.png" alt="project-img">
+                    <!-- Project stack -->
+                    <ul class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary flex-wrap">
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Laravel</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <!-- Project content -->
+                    <div class="text-white p-3">
+                        <!-- Project name -->
+                        <h3 class="text-2xl pb-3">Thaabith Hajj</h3>
+                        <!-- Project description -->
+                        <p class="text-tertiary">Bookkeeping and service showcase website</p>
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-5">
+                            <a href="https://thaabithhajj.com" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Live ~~> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary  shadow-primary">
+                    <!-- Project image -->
+                    <img src="images/projects/project-seaViewVillaUkulhas.png" alt="project-img">
+                    <!-- Project stack -->
+                    <ul class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary">
+                        <li>Html</li>
+                        <li>Bootstrap</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <!-- Project content -->
+                    <div class="text-white p-3">
+                        <!-- Project name -->
+                        <h3 class="text-2xl pb-3">Sea View Villa Ukulhas</h3>
+                        <!-- Project description -->
+                        <p class="text-tertiary">Guesthouse booking and showcase website</p>
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-5">
+                            <a href="https://seaviewvillaukulhas.com" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Live ~~> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary  shadow-primary">
+                    <!-- Project image -->
+                    <img src="images/projects/project-portfolio.png" alt="project-img">
+                    <!-- Project stack -->
+                    <ul class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary">
+                        <li>Htmx</li>
+                        <li>Tailwind</li>
+                        <li>Golang</li>
+                        <li>SQLite</li>
+                    </ul>
+                    <!-- Project content -->
+                    <div class="text-white p-3">
+                        <!-- Project name -->
+                        <h3 class="text-2xl pb-3">Dev Portfolio</h3>
+                        <!-- Project description -->
+                        <p class="text-tertiary">You'r using it rn</p>
+                        <!-- Project Links -->
+                        <div class="flex gap-3 pt-5">
+                            <a href="https://" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Live ~~> </a>
+                            <a href="https://" class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light" target="_blank">Github ~~> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements section -->
+    <section>
+        <!-- Achievements container -->
+        <div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+            <!-- Achievements Header -->
+            <div class="flex flex-row justify-between items-center test">
+                <div class="flex flex-row gap-2 md:gap-6 items-center">
+                    <h2 class="text-white text-3xl"><span class="text-primary">#</span>achievements</h2>
+                    <span class="h-0.5 w-[10rem] md:w-[20rem] bg-primary"></span>
+                </div>
+            </div>
+            <!-- Achievements list -->
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+                <!-- Achievements item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Achievements image -->
+                    <img class="border-b-2 border-white h-52 lg:h-64 object-cover" src="images/achievements/bml.png" alt="achievements-img" loading="lazy">
+                    <!-- Achievements content -->
+                    <div class="text-white p-3">
+                        <!-- Achievements name -->
+                        <h3 class="text-2xl pb-3">Winner (1st place)</h3>
+                        <!-- Achievements description -->
+                        <p class="text-tertiary">BML Hackthon 2022</p>
+                    </div>
+                </div>
+                <!-- Achievements item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Achievements image -->
+                    <img class="border-b-2 border-white h-52 lg:h-64 object-cover" src="images/achievements/undp.jpg" alt="achievements-img" loading="lazy">
+                    <!-- Achievements content -->
+                    <div class="text-white p-3">
+                        <!-- Achievements name -->
+                        <h3 class="text-2xl pb-3">Winner (1st place)</h3>
+                        <!-- Achievements description -->
+                        <p class="text-tertiary">UNDP Social Innovation Camp 2021</p>
+                    </div>
+                </div>
+                <!-- Achievements item -->
+                <div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+                    <!-- Achievements image -->
+                    <img class="border-b-2 border-white h-52 lg:h-64 object-cover" src="images/achievements/ugail.png" alt="achievements-img" loading="lazy">
+                    <!-- Achievements content -->
+                    <div class="text-white p-3">
+                        <!-- Achievements name -->
+                        <h3 class="text-2xl pb-3">Winner (1st place)</h3>
+                        <!-- Achievements description -->
+                        <p class="text-tertiary">Youth Tech Fair 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section>
+        <!-- Skills container -->
+        <div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+            <!-- Skills Header -->
+            <div class="flex flex-row justify-between items-center test">
+                <div class="flex flex-row gap-6 items-center">
+                    <h2 class="text-white text-3xl"><span class="text-primary">#</span>skills</h2>
+                    <span class="h-0.5 w-[10rem] md:w-[20rem] bg-primary"></span>
+                </div>
+            </div>
+
+            <!-- Skill Content -->
+            <div class="grid grid-cols-12">
+                <!-- Skill Image -->
+                <div class="hidden md:col-span-6 md:block">
+                    <img src="images/landing/landing-3.png" alt="skills-img" loading="lazy">
+                </div>
+                <!-- Skill List -->
+                <div class="col-span-12 md:col-span-6">
+                    <div class="grid grid-cols-12 gap-4 items-start">
+                        <!-- Skill Item -->
+                        <div class="border-2 col-span-6 lg:col-span-4">
+                            <h3 class="text-white text-lg p-2">Languages</h3>
+                            <hr>
+                            <ul class="text-tertiary flex flex-row flex-wrap gap-3 px-3 py-2">
+                                <li>PHP</li>
+                                <li>Javascript</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <!-- Skill Item -->
+                        <div class="border-2 col-span-6 lg:col-span-3">
+                            <h3 class="text-white text-lg p-2">Databases</h3>
+                            <hr>
+                            <ul class="text-tertiary flex flex-row flex-wrap gap-3 px-3 py-2">
+                                <li>MySQL</li>
+                                <li>SQLite</li>
+                            </ul>
+                        </div>
+                        <!-- Skill Item -->
+                        <div class="border-2 col-span-6 lg:col-span-5">
+                            <h3 class="text-white text-lg p-2">Tools</h3>
+                            <hr>
+                            <ul class="text-tertiary flex flex-row flex-wrap gap-3 px-3 py-2">
+                                <li>VSCode</li>
+                                <li>Figma</li>
+                                <li>Git</li>
+                                <li>Postman</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                        <!-- Skill Item -->
+                        <div class="border-2 col-span-6 lg:col-span-5">
+                            <h3 class="text-white text-lg p-2">Frameworks</h3>
+                            <hr>
+                            <ul class="text-tertiary flex flex-row flex-wrap gap-3 px-3 py-2">
+                                <li>Laravel</li>
+                                <li>Tailwind</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me section -->
+    <section>
+        <!-- About me container -->
+        <div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+            <!-- About me Header -->
+            <div class="flex flex-row justify-between items-center test">
+                <div class="flex flex-row gap-6 items-center">
+                    <h2 class="text-white text-3xl"><span class="text-primary">#</span>about-me</h2>
+                    <span class="h-0.5 w-[10rem] md:w-[20rem] bg-primary"></span>
+                </div>
+            </div>
+            <!-- About me content -->
+            <div class="flex flex-col md:flex-row md:gap-10">
+                <!-- About me text -->
+                <div class="md:mt-16 flex flex-col">
+                    <p class="text-tertiary pb-5">
+                        Hello, i’m a
+                        <br>
+                        <br>
+                        passionate and self-taught Fullstack Web Developer with a strong foundation in web technologies and a knack for turning ideas into interactive and functional websites. With a portfolio boasting five completed projects, I'm on a continuous journey to improve and innovate in the web development space.
+                        <br>
+                        <br>
+                        Transforming my creativity and knowledge into a websites has been my passion for years. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
+                    </p>
+                    <!-- About me button -->
+                    <a href="/aboutme" target="_blank" class="outline outline-2 outline-primary text-white p-3 md:pr-3 hover:bg-primary-light w-5/12 md:w-6/12 lg:w-3/12">Read more ~~></a>
+                </div>
+                <!-- About me image -->
+                <img class="border-b-2 border-primary" src="images/landing/landing-2.png" alt="about-me-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section>
+        <!-- Contact container -->
+        <div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+            <!-- Contact Header -->
+            <div class="flex flex-row justify-between items-center test">
+                <div class="flex flex-row gap-6 items-center">
+                    <h2 class="text-white text-3xl"><span class="text-primary">#</span>contacts</h2>
+                    <span class="h-0.5 w-[10rem] md:w-[20rem] bg-primary"></span>
+                </div>
+            </div>
+
+            <!-- Contact contents -->
+            <div class="grid grid-cols-12 gap-8">
+                <!-- Contact description -->
+                <p class="text-tertiary mb-4 col-span-12 lg:col-span-8">
+                    I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
+                </p>
+                <!-- Get in touch -->
+                <div class="border border-1 border-white p-3 col-span-10 lg:col-span-4 items-start">
+                    <h3 class="text-white">Message me here</h3>
+                    <ul class="text-tertiary mt-3">
+                        <li> <img src="images/icons/Discord.svg" class="inline" alt="discord-ico" loading="lazy">syndrom7</li>
+                        <li> <img src="images/icons/Email.svg"   class="inline" alt="email-ico" loading="lazy">zayaan324@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ template "footer" . }}
+{{ end }}
