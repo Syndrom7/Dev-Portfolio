@@ -35,10 +35,24 @@ To run this project locally, follow these steps:
 
 This will start the server on `localhost:8081`
 
-4. Open your browser and visit `http://localhost:8081` to view the portfolio.
+## Docker Setup
+
+To run this project using docker, follow these steps:
+
+1. Build the Docker image
+   ```bash
+   docker build -t dev_portfolio .
+   ```
+
+2. Run the Docker container
+   ```bash
+   docker run -p 8081:8081 dev_portfolio
+   ```
+
+3. Open your browser and visit `http://localhost:8081`.
 
 ## Structure
-- `src/`: Contains all the source files for the portfolio, including HTML templates, CSS, and JavaScript.
+- `src/`: Contains all the source files, including HTML templates, CSS, and JavaScript.
 - `src/partials/`: Reusable HTML components like headers and footers.
 - `assets/`: Static files like images and fonts.
 - `main.go`: The Go server entry point.
