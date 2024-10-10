@@ -1,0 +1,57 @@
+<!-- src/lib/components/Footer.svelte -->
+<script>
+    const currentYear = new Date().getFullYear();
+</script>
+
+<footer class="border-t-2 border-white mt-20">
+	<!-- Footer Container -->
+	<div class="container mx-auto flex flex-col px-4 lg:px-52 py-4">
+		<!-- Footer Information -->
+		<div class="flex flex-col md:flex-row justify-between mb-6 gap-y-10">
+			<div class="flex flex-col">
+				<!-- Footer Header -->
+				<div class="flex gap-x-4 pb-3">
+					<!-- Logo -->
+					<div class="flex gap-x-3">
+						<img src="images/Logo.svg" alt="logo" />
+						<p class="text-white">Syndrom</p>
+					</div>
+					<a class="text-tertiary" href="mailto:zayaan324@gmail.com"
+						>zayaan324@gmail.com</a
+					>
+				</div>
+				<!-- Footer description -->
+				<p class="text-white">Web dev</p>
+			</div>
+			<!-- Footer Links -->
+			<div>
+				<h3 class="text-white text-2xl pb-3">Media</h3>
+				<!-- Footer icons & Links -->
+				<ul class="flex gap-x-3">
+					<li>
+						<a href="https://github.com/Syndrom7"
+							><img
+								src="images/icons/Github.svg"
+								alt="github-icon"
+								loading="lazy"
+							/></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="images/icons/Discord.svg"
+								alt="discord-icon"
+								loading="lazy"
+							/></a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Footer Copyright -->
+		<div class="flex items-center justify-center">
+			<p class="text-tertiary">© Copyright {currentYear}. Made by Zayan</p>
+		</div>
+	</div>
+</footer>

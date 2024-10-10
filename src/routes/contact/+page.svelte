@@ -1,0 +1,105 @@
+<!-- Header section -->
+<section>
+	<!-- Header Container -->
+	<div class="container flex flex-col md:flex-row mx-auto justify-between px-4 lg:px-52 md:mt-8">
+		<!-- Hero text -->
+		<div class="flex flex-col gap-6 mt-24 md:mt-1">
+			<!-- Header Content -->
+			<div class="flex flex-row gap-2 md:gap-6 items-center">
+				<h2 class="text-white text-3xl"><span class="text-primary">/</span>contacts</h2>
+			</div>
+			<p class="text-tertiary">Contact details</p>
+		</div>
+	</div>
+</section>
+
+<!-- Contact section -->
+<section>
+	<!-- Contact container -->
+	<div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+		<!-- Contact Header -->
+		<div class="flex flex-row justify-between items-center test">
+			<div class="flex flex-row gap-6 items-center">
+				<h2 class="text-white text-3xl"><span class="text-primary">#</span>contacts</h2>
+				<span class="h-0.5 w-[10rem] md:w-[20rem] bg-primary"></span>
+			</div>
+		</div>
+		<!-- Contact contents -->
+		<div class="grid grid-cols-12 gap-8">
+			<!-- Contact description -->
+			<p class="text-tertiary mb-4 col-span-12 lg:col-span-8">
+				I’m interested in freelance opportunities. However, if you have other request or
+				question, don’t hesitate to contact me
+			</p>
+			<!-- Get in touch -->
+			<div class="border border-1 border-white p-3 col-span-10 lg:col-span-4 items-start">
+				<h3 class="text-white">Message me here</h3>
+				<ul class="text-tertiary mt-3">
+					<li>
+						<img
+							src="images/icons/Discord.svg"
+							class="inline"
+							alt="discord-ico"
+							loading="lazy"
+						/>syndrom7
+					</li>
+					<li>
+						<img
+							src="images/icons/Email.svg"
+							class="inline"
+							alt="email-ico"
+							loading="lazy"
+						/>zayaan324@gmail.com
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Contact section -->
+<section>
+	<!-- Contact container -->
+	<div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+		<!-- Contact Header -->
+		<div class="flex flex-row justify-between items-center test">
+			<div class="flex flex-row gap-6 items-center">
+				<h2 class="text-white text-3xl"><span class="text-primary">#</span>get in touch</h2>
+				<span class="h-0.5 w-[5rem] md:w-[20rem] bg-primary"></span>
+			</div>
+		</div>
+		<!-- Contact contents -->
+		<div class="grid grid-cols-12 gap-3">
+			<!-- Contact description -->
+			<input
+				class="p-3 bg-secondary border-2 col-span-6 focus:outline outline-tertiary text-white"
+				type="text"
+				name="name"
+				placeholder="Name"
+			/>
+			<input
+				class="p-3 bg-secondary border-2 col-span-6 focus:outline outline-tertiary text-white"
+				type="text"
+				name="email"
+				placeholder="Email"
+			/>
+			<input
+				class="p-3 bg-secondary border-2 col-span-12 focus:outline outline-tertiary text-white"
+				type="text"
+				name="title"
+				placeholder="Title"
+			/>
+			<textarea
+				class="p-3 bg-secondary border-2 col-span-12 focus:outline outline-tertiary text-white"
+				name="message"
+				cols="30"
+				rows="10"
+				placeholder="Message"
+			></textarea>
+			<button
+				class="text-white border-2 border-primary col-span-4 md:col-span-2 p-3 px-4 hover:bg-primary-light"
+				type="submit">Send</button
+			>
+		</div>
+	</div>
+</section>

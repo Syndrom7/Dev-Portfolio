@@ -1,0 +1,262 @@
+<!-- Header section -->
+<section>
+	<!-- Hero Container -->
+	<div class="container flex flex-col md:flex-row mx-auto justify-between px-4 lg:px-52 md:mt-8">
+		<!-- Hero text -->
+		<div class="flex flex-col gap-6 mt-24 md:mt-1">
+			<!-- Header Content -->
+			<div class="flex flex-row gap-2 md:gap-6 items-center">
+				<h2 class="text-white text-3xl"><span class="text-primary">/</span>projects</h2>
+			</div>
+			<p class="text-tertiary">List of my projects</p>
+		</div>
+	</div>
+</section>
+
+<!-- Projects section -->
+<section>
+	<!-- Projects container -->
+	<div class="container flex flex-col mx-auto mt-16 gap-7 px-4 lg:px-52">
+		<!-- Projects Header -->
+		<div class="flex flex-row items-center">
+			<div class="flex flex-row gap-2 md:gap-6 items-center">
+				<h2 class="text-white text-3xl"><span class="text-primary">#</span>projects</h2>
+				<span class="h-0.5 w-[3rem] md:w-[25rem] bg-primary"></span>
+			</div>
+		</div>
+
+		<!-- Projects list -->
+		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+			<!-- Project item -->
+			<div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+				<!-- Project image -->
+				<img
+					loading="lazy"
+					src="images/projects/project-CatalystPHP.png"
+					alt="project-img"
+				/>
+				<!-- Project stack -->
+				<ul
+					class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary"
+				>
+					<li>PHP</li>
+					<li>Tailwind</li>
+				</ul>
+				<!-- Project content -->
+				<div class="text-white p-3">
+					<!-- Project name -->
+					<h3 class="text-2xl pb-3">Catalyst PHP</h3>
+					<!-- Project description -->
+					<p class="text-tertiary">A type-safe, dependency-free PHP framework</p>
+					<!-- Project Links -->
+					<div class="flex gap-3 pt-5">
+						<a
+							href="https://github.com/Syndrom7/CatalystPHP"
+							class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light"
+							target="_blank"
+							>Github ~~>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Project item -->
+			<div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+				<!-- Project image -->
+				<img
+					loading="lazy"
+					src="images/projects/project-ibayScrapper.png"
+					alt="project-img"
+				/>
+				<!-- Project stack -->
+				<ul
+					class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary"
+				>
+					<li>Python</li>
+				</ul>
+				<!-- Project content -->
+				<div class="text-white p-3">
+					<!-- Project name -->
+					<h3 class="text-2xl pb-3">Ibay Scrapper</h3>
+					<!-- Project description -->
+					<p class="text-tertiary">A scraper for ibay.com.mv</p>
+					<!-- Project Links -->
+					<div class="flex gap-3 pt-5">
+						<a
+							href="https://github.com/Syndrom7/Ibay-Scrapper"
+							class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light"
+							target="_blank"
+							>Github ~~>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Project item -->
+			<div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+				<!-- Project image -->
+				<img
+					loading="lazy"
+					src="images/projects/project-ukulhasVillaBeachHotel.png"
+					alt="project-img"
+				/>
+				<!-- Project stack -->
+				<ul
+					class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary"
+				>
+					<li>Html</li>
+					<li>Bootstrap</li>
+					<li>PHP</li>
+					<li>MySQL</li>
+				</ul>
+				<!-- Project content -->
+				<div class="text-white p-3">
+					<!-- Project name -->
+					<h3 class="text-2xl pb-3">Ukulhas Villa Beach Hotel</h3>
+					<!-- Project description -->
+					<p class="text-tertiary">Guesthouse booking and showcase website</p>
+					<!-- Project Links -->
+					<div class="flex gap-3 pt-5">
+						<a
+							href="https://ukulhasvillabeachhotel.com"
+							class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light"
+							target="_blank"
+							>Live ~~>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Project item -->
+			<div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+				<!-- Project image -->
+				<img
+					loading="lazy"
+					src="images/projects/project-ukulhasVilla.png"
+					alt="project-img"
+				/>
+				<!-- Project stack -->
+				<ul
+					class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary"
+				>
+					<li>Html</li>
+					<li>Bootstrap</li>
+					<li>PHP</li>
+					<li>MySQL</li>
+				</ul>
+				<!-- Project content -->
+				<div class="text-white p-3">
+					<!-- Project name -->
+					<h3 class="text-2xl pb-3">Ukulhas Villa</h3>
+					<!-- Project description -->
+					<p class="text-tertiary">Guesthouse booking and showcase website</p>
+					<!-- Project Links -->
+					<div class="flex gap-3 pt-5">
+						<a
+							href="https://ukulhasvilla.com"
+							class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light"
+							target="_blank"
+							>Live ~~>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Project item -->
+			<div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+				<!-- Project image -->
+				<img
+					loading="lazy"
+					src="images/projects/project-thaabithHajj.png"
+					alt="project-img"
+				/>
+				<!-- Project stack -->
+				<ul
+					class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary flex-wrap"
+				>
+					<li>Html</li>
+					<li>CSS</li>
+					<li>Bootstrap</li>
+					<li>Laravel</li>
+					<li>MySQL</li>
+				</ul>
+				<!-- Project content -->
+				<div class="text-white p-3">
+					<!-- Project name -->
+					<h3 class="text-2xl pb-3">Thaabith Hajj</h3>
+					<!-- Project description -->
+					<p class="text-tertiary">Bookkeeping and</p>
+					<!-- Project Links -->
+					<div class="flex gap-3 pt-5">
+						<a
+							href="https://thaabithhajj.com"
+							class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light"
+							target="_blank"
+							>Live ~~>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Project item -->
+			<div class="flex flex-col w-full md:w-auto border-2 border-tertiary">
+				<!-- Project image -->
+				<img
+					loading="lazy"
+					src="images/projects/project-seaViewVillaUkulhas.png"
+					alt="project-img"
+				/>
+				<!-- Project stack -->
+				<ul
+					class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary"
+				>
+					<li>Html</li>
+					<li>Bootstrap</li>
+					<li>PHP</li>
+					<li>MySQL</li>
+				</ul>
+				<!-- Project content -->
+				<div class="text-white p-3">
+					<!-- Project name -->
+					<h3 class="text-2xl pb-3">Sea View Villa Ukulhas</h3>
+					<!-- Project description -->
+					<p class="text-tertiary">Guesthouse booking and showcase website</p>
+					<!-- Project Links -->
+					<div class="flex gap-3 pt-5">
+						<a
+							href="https://seaviewvillaukulhas.com"
+							class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light"
+							target="_blank"
+							>Live ~~>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Project item -->
+			<div class="flex flex-col w-full md:w-auto border-2 border-tertiary shadow-primary">
+				<!-- Project image -->
+				<img loading="lazy" src="images/projects/project-portfolio.png" alt="project-img" />
+				<!-- Project stack -->
+				<ul
+					class="text-tertiary flex flex-row gap-x-3 px-3 py-2 border-y-2 border-tertiary"
+				>
+					<li>Htmx</li>
+					<li>Tailwind</li>
+					<li>Golang</li>
+					<li>SQLite</li>
+				</ul>
+				<!-- Project content -->
+				<div class="text-white p-3">
+					<!-- Project name -->
+					<h3 class="text-2xl pb-3">Dev Portfolio</h3>
+					<!-- Project description -->
+					<p class="text-tertiary">You'r using it rn</p>
+					<!-- Project Links -->
+					<div class="flex gap-3 pt-5">
+						<a
+							href="https://github.com/Syndrom7/Dev-Portfolio"
+							class="text-white outline outline-1 outline-primary py-2 px-4 hover:bg-primary-light"
+							target="_blank"
+							>Github ~~>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

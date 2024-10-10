@@ -1,21 +1,17 @@
-{{ define "header" }}
+<!-- src/app.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - {{ .Title }}</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://unpkg.com/htmx.org@1.9.6" defer></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
-    <script src="js/script.js" defer></script>
-
+    %sveltekit.head%
+    <link rel="stylesheet" href="%sveltekit.assets%/css/main.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body class="bg-secondary font-fira-code">
-
-{{ end }}
+    %sveltekit.body%
+</body>
+</html>
